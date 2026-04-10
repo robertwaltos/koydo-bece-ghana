@@ -1,0 +1,45 @@
+// BECE Ghana Configuration
+// Generated from top_200_exam_universe_seed.csv
+
+export const EXAM_CONFIG = {
+  examId: "EXAM121",
+  slug: "bece-ghana",
+  name: "BECE Ghana",
+  fullName: "BECE",
+  alias: "BECE",
+  family: "BECE Ghana",
+  category: "School exams",
+  subcategory: "Basic education certificate",
+  country: "Ghana",
+  region: "Africa",
+  languages: ["English"],
+  estimatedAnnualTakers: "large",
+  testingWindow: "Aug",
+  schedulePattern: "Annual",
+  ageGroup: "13-16",
+  targetUser: "School student",
+  delivery: "Paper-based",
+  questionTypes: ["Objective + written"],
+  adaptivity: "Linear",
+  sections: "Subject exams",
+  scoringMode: "Grades",
+  essayOrSpeaking: "Writing",
+  ipRisk: "Low",
+  contentReuse: "school_subjects",
+  uiEngine: "paper_objective_plus_written",
+  monetizationPotential: "Medium",
+  tier: "Tier 5",
+  launchWave: "Wave 7",
+  themeColor: "#D97706",
+  themeColorDark: "#B45309",
+  localizationComplexity: "Medium",
+  offlineNeeded: true,
+  mobileFirst: true,
+  locale: "en",
+  isRTL: false,
+  freemiumGate: {
+    dailyQuestions: 10,
+  },
+} as const;
+
+export type ExamConfig = typeof EXAM_CONFIG;
